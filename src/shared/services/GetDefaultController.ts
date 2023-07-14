@@ -1,16 +1,15 @@
 import { Request, Response } from 'express';
-import { GetDefaultService } from './getDefaultService';
 
 
 class GetDefaultController {
   async handle(request: Request, response: Response): Promise<Response> {
-    const {orderNumber } = request.body;
 
-    const getDefaultService = new GetDefaultService();
+    console.log("BODY=", JSON.stringify(request.body));
+    console.log("HEADERS=",JSON.stringify(request.headers));
+    console.log("QUERY=",JSON.stringify(request.query));
 
-    const serviceReturn = await getDefaultService.execute(orderNumber);
 
-    return response.status(200).json(serviceReturn);
+    return response.status(200).json({"message": "Success"});
   }
 }
 

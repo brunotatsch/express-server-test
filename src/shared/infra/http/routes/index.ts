@@ -1,4 +1,4 @@
- import { GetDefaultController } from "@shared/services/getDefaultController";
+ import { GetDefaultController } from "@shared/services/GetDefaultController";
 import { Router } from "express";
 
 const router = Router();
