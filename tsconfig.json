@@ -16,7 +16,7 @@
       ],
       "@utils/*": [
         "utils/*"
-      ],
+      ]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
